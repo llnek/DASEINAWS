@@ -1,0 +1,26 @@
+------------------------------------------------------------------------------
+AWS Cloud Extension for Daesin Cloud API.
+Copyright 2011 Cherimoia,LLC. All Rights Reserved.
+------------------------------------------------------------------------------
+The following set of software modules/components are included
+( bundled as binaries/source code):
+
+- Dasein Cloud API - java library package,
+  which is open source (Apache-license) software.
+  @see http://dasein-cloud.sourceforge.net
+  @see-license http://www.apache.org/licenses/LICENSE-2.0
+
+- AWS SDK for Java - java library package,
+  which is open source (Apache-license) software.
+  @see http://aws.amazon.com/sdkforjava/
+  @see-license http://www.apache.org/licenses/LICENSE-2.0
+
+- Apache HttpComponents, which is open source software.
+  @see http://hc.apache.org/
+  @see-license http://www.apache.org/licenses/LICENSE-2.0
+
+- Zotoh's General Purpose Java Library,
+  which is open source (Apache-license) software.
+  @see http://zotoh.com
+  @see-license http://www.apache.org/licenses/LICENSE-2.0
+

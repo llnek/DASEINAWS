@@ -1,0 +1,31 @@
+<ivy-module version="2.0">
+
+    <info organisation="com.zotoh" module="dasein-aws"/>
+	
+    <configurations defaultconf="libjar">
+    	<conf name="libjar"  description="the core jar library"/>
+    	<conf name="thirdparty"  description="3rd party libs"/>
+    	<conf name="test" extends="libjar,thirdparty" visibility="private" description="internal testing"/>
+    </configurations>
+    <publications>
+    	<artifact name="dasein-aws-distro" type="distro"  conf="libjar" ext="zip"/>
+    	<artifact name="dasein-aws" type="jar"  conf="libjar" ext="jar"/>
+    </publications>
+
+    <dependencies>
+		<dependency org="org.dasein" name="dasein-cloud-core" rev="2011.02" conf="libjar->default"/>
+		<dependency org="org.dasein" name="dasein-util" rev="2011.02" conf="libjar->default"/>
+        <dependency org="org.apache.httpcomponents" name="httpcore" rev="4.1.3" conf="libjar->default"/>
+        <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.1.2" conf="libjar->default"/>
+		<dependency org="com.amazonaws" name="aws-java-sdk" rev="1.2.12"  conf="thirdparty->default">
+            <exclude org="org.apache.httpcomponents" />
+            <exclude org="commons-logging" />
+            <exclude org="commons-codec" />
+            <exclude org="javax.activation" />
+            <exclude org="javax.mail" />
+        </dependency>
+		<dependency org="com.zotoh" name="fxcore" rev="1.0.0"  conf="libjar->libjar"/>
+		<dependency org="junit" name="junit" rev="4.8.2"  conf="test->default"/>
+    </dependencies>
+    
+</ivy-module>
