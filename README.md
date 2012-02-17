@@ -8,8 +8,10 @@ Dasein-cloud.
 
 ## Java
 * &gt;= 1.6
+
 ## AWS JavaSDK (included)
 * &gt;= 1.2.12
+
 ## Dasein-core SDK (included)
 * dasein-cloud-2011.02.zip
 
